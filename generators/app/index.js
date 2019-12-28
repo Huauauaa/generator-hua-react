@@ -67,10 +67,10 @@ module.exports = class extends Generator {
       this.destinationPath(`${this.props.name}/.eslintrc.js`)
     );
 
-    this.fs.copy(
-      this.templatePath(".gitignore"),
-      this.destinationPath(`${this.props.name}/.gitignore`)
-    );
+    // This.fs.copy(
+    //   this.templatePath(".gitignore"),
+    //   this.destinationPath(`${this.props.name}/.gitignore`)
+    // );
 
     this.fs.copy(
       this.templatePath(".prettierignore"),
